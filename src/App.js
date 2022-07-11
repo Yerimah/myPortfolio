@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import About from './components/About/About';
 import Home from './components/Home/Home';
 import Portfolio from './components/Portfolio/Portfolio';
+import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 
 
@@ -15,6 +16,7 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

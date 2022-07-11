@@ -1,5 +1,5 @@
 import { faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faCake, faUser, faHome, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faHome, faEnvelope, faBriefcase, faGear } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
@@ -33,7 +33,15 @@ const Navbar = () => {
             className="portfolio-link" 
             to="/portfolio"
           >
-            <FontAwesomeIcon icon={faCake} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
+          </NavLink>
+          <NavLink 
+            exact="true" 
+            activeclassname="active" 
+            className="skills-link" 
+            to="/skills"
+          >
+            <FontAwesomeIcon icon={faGear} color="#4d4d4e" />
           </NavLink>
           <NavLink 
             exact="true" 

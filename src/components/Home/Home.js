@@ -1,17 +1,37 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.scss'
 import Actions from './Actions'
+import AnimatedLetters from '../AnimatedLetters'
 
 const Home = () => {
+  const [ letterClass, setLetterClass ] = useState('text-animate')
+  const nameArray = ['D', 'a', 'n', 'i', 'e', 'l', ' ', 'Y', 'e', 'r', 'i', 'm', 'a', 'h']
+  const jobArray = ['s', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+  }, [])
+
   return (
     <>
       <div className="container home-page">
         <div className="main">
-            <h1>Hi, <br /> I'm <span>Daniel Yerimah</span>
+            <h1>
+              <span className={letterClass}>H</span> 
+              <span className={`${letterClass} _12`}>i</span> 
+            <br /> 
+              <span className={`${letterClass} _13`}>I</span> 
+              <span className={`${letterClass} _14`}>'m</span> <AnimatedLetters letterClass={letterClass}
+            strArray={nameArray}
+            idx={15} />
              <br/>
-            Full-Stack Software developer
+             <AnimatedLetters letterClass={letterClass}
+            strArray={jobArray}
+            idx={22} />
             </h1>
-          <h2>Software developer / Youtuber / Digital media strategist</h2>
+          <h2>Front End developer / UI/UX / Digital media strategist</h2>
           <Actions />
         </div>
       </div>
