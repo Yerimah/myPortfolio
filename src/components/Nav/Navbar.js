@@ -1,17 +1,31 @@
-import { faGithub, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faUser, faHome, faEnvelope, faBriefcase, faGear } from '@fortawesome/free-solid-svg-icons'
+import { 
+  faGithub, 
+  faLinkedin, 
+  faTwitter, 
+  faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { 
+  faUser, 
+  faHome, 
+  faEnvelope, 
+  faBriefcase, 
+  faGear, faBars} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './Navbar.scss'
 
 const Navbar = () => {
+
+      const [ show, setShow ] = useState(false)
+
+      const dropDown = () => setShow(!show);
+
   return (
     <div className="side-bar">
       <Link className="brand" to="/">
         Daniel Yerimah
       </Link>
-      <nav>
+      <nav className='show'>
           <NavLink 
             exact="true" 
             activeclassname="active" 
@@ -90,6 +104,9 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+      <Link to="#" className='mobile-link'>
+        <FontAwesomeIcon icon={faBars} onClick={dropDown} color="#ffffff" />
+      </Link>
     </div>
   )
 }

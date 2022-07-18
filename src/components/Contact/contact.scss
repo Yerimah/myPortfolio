@@ -55,4 +55,16 @@
         box-sizing: border-box;
         min-height: 150px;
     }
+
+    .flat-button {
+        color: rgb(92, 92, 185);
+        background: 0 0;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: 1px solid rgb(92, 92, 185);
+        float: right;
+        border-radius: 4px;
+    }
 }
