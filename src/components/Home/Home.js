@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './style.scss'
 import Actions from './Actions'
 import AnimatedLetters from '../AnimatedLetters'
+import Loader from 'react-loaders'
 
 const Home = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate')
@@ -35,6 +36,7 @@ const Home = () => {
           <Actions />
         </div>
       </div>
+      <Loader type='pacman' />
     </>
   )
 }
