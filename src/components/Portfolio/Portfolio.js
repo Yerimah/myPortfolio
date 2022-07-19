@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
+import './portfolio.scss'
 
 const Portfolio = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate')
@@ -13,7 +15,7 @@ const Portfolio = () => {
   return (
     <>
     <div className='container portfolio'>
-      <div>
+      <div className='text-zone'>
         <h1>
           <AnimatedLetters letterClass={letterClass}
             strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
@@ -23,6 +25,7 @@ const Portfolio = () => {
       </div>
 
     </div>
+    <Loader type="pacman" />
     </>
   )
 }
