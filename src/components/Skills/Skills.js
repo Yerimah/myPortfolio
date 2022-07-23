@@ -22,6 +22,9 @@ const Skills = () => {
             />  
           </h1>
       </div>
+      <div className='skill-content'>
+        hjhskldjh dkhjdfljhsl dkhflkjhsdlk kjhsdlkj
+      </div>
 
     </div>
     
