@@ -30,7 +30,8 @@ const Contact = () => {
   return (
     <>
     <div className='container contact-page'>
-      <div className='text-zone'>
+      <div className='contact_cont'>
+        <div className='contact-header'>
         <h1>
           <AnimatedLetters
           letterClass={letterClass} 
@@ -42,6 +43,7 @@ const Contact = () => {
           I am interested in exploring different opportunities and collaborations from remote to freelance.
           If you have other requests or questions, don't hesitate to contact me through the form
         </p>
+        </div>
 
         <div className='contact-form'>
         <form ref={refForm} onSubmit={sendEmail}>

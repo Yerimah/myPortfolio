@@ -109,3 +109,16 @@
     }
   }
 }
+
+@media (max-with: 960px) {
+    .container {
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 530px) {
+    // .container {
+    //     display: none;
+    // }
+}

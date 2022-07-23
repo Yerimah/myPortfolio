@@ -1,6 +1,16 @@
+.contact_cont {
+    display: flex;
+    align-items: center;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 19%;
 
     ul {
         padding: 0;
@@ -66,5 +76,12 @@
         border: 1px solid rgb(92, 92, 185);
         float: right;
         border-radius: 4px;
+    }
+}
+
+@media (max-width: 530px) {
+    .contact_cont {
+        position: absolute;
+        top: 22%;
     }
 }

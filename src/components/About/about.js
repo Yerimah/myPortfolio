@@ -19,7 +19,7 @@ const About = () => {
   return (
     <section>
       <div className='container about-page'>
-        <div className='text-zone'>
+        <div className='about-content'>
             <h1>
               <AnimatedLetters letterClass={letterClass}
                 strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
@@ -27,11 +27,9 @@ const About = () => {
               />  
             </h1>
 
-          <div className='content'>
             <p>I'm a very ambitious front end developer looking for a role in an established IT company with the
               opportunity to work with the latest technologies on challenging and innovative projects</p>
             <p>I'm confident and curious with a desire to consistently grow and improve my skills</p>
-          </div>
         </div>
 
         {/* <div className='about'>
