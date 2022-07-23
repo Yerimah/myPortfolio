@@ -24,6 +24,7 @@ const Skills = () => {
             />  
           </h1>
       </div>
+     
       <div className='content'>
       <p>A full-stack Software Engineer with hands-on experience in developing 
         innovative web solutions using JavaScript | React | Redux | Ruby | Ruby on Rails. 
