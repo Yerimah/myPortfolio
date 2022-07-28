@@ -20,6 +20,7 @@ const About = () => {
     <section>
       <div className='container about-page'>
         <div className='about-content'>
+          <div className="about-head">
             <h1>
               <AnimatedLetters letterClass={letterClass}
                 strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
@@ -60,6 +61,7 @@ const About = () => {
               </div>
 
             </div>
+          </div>
           </div>
       </div>
         <Loader type='pacman' />
