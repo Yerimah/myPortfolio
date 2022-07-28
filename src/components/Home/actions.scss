@@ -1,0 +1,44 @@
+.cta {
+
+    a {
+        text-decoration: none;
+    }
+
+    .btn-primary {
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: rgb(92, 92, 185);
+        padding: 10px 18px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        margin-right: 10px;
+        white-space: nowrap;
+
+        &:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+
+    .btn {
+        color: black;
+        background-color: white;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover {
+            color: white;
+            background-color: rgb(92, 92, 185);
+        }
+    }
+}
