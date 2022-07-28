@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Loader from 'react-loaders'
+import AnalyticsEventTracker from '../AnalyticsEventTracker'
 import AnimatedLetters from '../AnimatedLetters'
 import './portfolio.scss'
 import Image1 from '../../assets/GifStock.gif'
@@ -48,6 +49,7 @@ const projects = [
 ];
 
 const Portfolio = () => {
+  const gaEventTracker = AnalyticsEventTracker('Visit Projects');
   const [ letterClass, setLetterClass ] = useState('text-animate')
 
   useEffect(() => {
@@ -80,7 +82,9 @@ const Portfolio = () => {
                 href={project.repo} 
                 className="btn" 
                 target="_blank" 
-                rel="noreferrer" >
+                rel="noreferrer"
+                onClick={() => gaEventTracker('Source Code')} 
+              >
                 Source Code
               </a>
               <a
@@ -88,7 +92,7 @@ const Portfolio = () => {
                 className="btn btn-primary"
                 target="_blank"
                 rel="noreferrer"
-                // onClick={() => gaEventTracker('View Live Demo')}
+                onClick={() => gaEventTracker('Live Demo')}
               >
                 Live Demo
               </a>

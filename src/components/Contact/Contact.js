@@ -5,6 +5,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 
 const Contact = () => {
+  
   const [ letterClass, setLetterClass ] = useState('text-animate')
   const refForm = useRef()
 
