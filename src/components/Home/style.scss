@@ -45,4 +45,21 @@
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
     }
+ }
+
+// .hero_content {
+//     display: flex;
+//     justify-content: center;
+// }
+
+.hero-img {
+    padding-top: 10%;
+    padding-left: 70%;
+}
+
+.hero-img img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    
 }

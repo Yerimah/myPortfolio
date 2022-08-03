@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './style.scss'
 import Actions from './Actions'
+import myPhoto from '../../assets/photo.png'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
 
@@ -18,6 +19,7 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
+        <div className='hero_content'>
         <div className="main">
             <h1>
               <span className={letterClass}>H</span> 
@@ -34,6 +36,10 @@ const Home = () => {
             </h1>
           <h2>Front End developer / UI/UX / Digital media strategist</h2>
           <Actions />
+        </div>
+        <div className='hero-img'>
+          <img className='img-card' src={myPhoto} alt='Daniel Yerimah' />
+        </div>
         </div>
       </div>
       <Loader type='pacman' />
