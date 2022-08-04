@@ -88,3 +88,18 @@
         transform: rotateX(90deg) rotateZ(90deg);
     }
 }
+
+@media (max-width: 590px) {
+    .about-head {
+        width: 85%;
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    .stage-cube-cont {
+        padding-top: 134%;
+        right: 25%;
+    }
+}

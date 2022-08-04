@@ -33,12 +33,6 @@ const About = () => {
             <p>I'm confident and curious with a desire to consistently grow and improve my skills</p>
         </div>
 
-        {/* <div className='about'>
-            <div className='about-image'>
-              <img src={photo} alt='photo' width='100px' height='100px' />
-            </div>
-          </div> */}
-
           <div className='stage-cube-cont'>
             <div className='cubespinner'>
               <div className='face1'>
