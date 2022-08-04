@@ -17,7 +17,7 @@
         font-size: 1.4rem;
     }
 
-    nav {
+    .nav-links {
         display: block;
         text-align: center;
         position: absolute;
@@ -147,7 +147,7 @@
         margin-right: 20px;
     }
 
-    nav {
+    .nav-links {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -195,13 +195,35 @@
     .side-bar {
         position: fixed;
 
-        nav {
+        .nav-links {
             display: none;
         }
 
         li {
             display: none;
         }
+    }
+
+    .nav-links-mobile {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: black;
+        left: 0;
+        top: 58px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+    .home-link,
+    .about-link,
+    .portfolio-link,
+    .skills-link,
+    .contact-link {
+        text-align: center;
+        width:  100%;
+        font-size: 19px;
+        padding: 32px;
+        transition: all 0.5s ease;
     }
 
     .mobile-link {

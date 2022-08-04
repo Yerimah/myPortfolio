@@ -8,7 +8,7 @@ import {
   faHome, 
   faEnvelope, 
   faBriefcase, 
-  faGear, faBars} from '@fortawesome/free-solid-svg-icons'
+  faGear, faBars, faXmark} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
@@ -16,19 +16,20 @@ import './Navbar.scss'
 
 const Navbar = () => {
 
-      const [ show, setShow ] = useState(false)
-
-      const dropDown = () => setShow(!show);
+      const [ isMobile, setIsMobile ] = useState(true)
 
   return (
     <div className="side-bar">
       <Link className="brand" to="/">
         Daniel Yerimah
       </Link>
-      <nav className='show'>
+      <nav className={isMobile ? "nav-links-mobile" : "nav-links"}
+          onClick={() => setIsMobile(false)}
+          >
           <NavLink 
             exact="true" 
             activeclassname="active" 
+            className="home-link"
             to="/"
           >
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
@@ -104,9 +105,19 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <Link to="#" className='mobile-link'>
-        <FontAwesomeIcon icon={faBars} onClick={dropDown} color="#ffffff" />
-      </Link>
+      {/* <Link to="#" className='mobile-link'>
+        <FontAwesomeIcon icon={faBars} color="#ffffff" />
+      </Link> */}
+
+      <button className='mobile-link' 
+        onClick={() => setIsMobile(!isMobile)}
+        >
+        {isMobile ? (
+        <FontAwesomeIcon icon={faXmark} />
+        ) : (
+        <FontAwesomeIcon icon={faBars} />
+        )}
+        </button>
     </div>
   )
 }
