@@ -111,14 +111,14 @@
 }
 
 @media (max-with: 960px) {
-    // .container {
-    //     padding-left: ;
-    // }
+    .container {
+        padding: 0;
+    }
 }
 
 
 @media (max-width: 530px) {
-    .container {
-        padding-left: 38px;
-    }
+    // .container {
+    //     display: none;
+    // }
 }

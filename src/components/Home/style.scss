@@ -63,22 +63,3 @@
     border-radius: 50%;
     
 }
-
-@media (max-width: 530px) {
-    .home-page {
-        .main {
-            position: unset;
-            top: 405px;
-        }
-
-        h1 {
-            padding-top: 155px;
-            font-size: 31px;
-        }
-    }
-
-    .hero-img {
-        padding-top: 18%;
-        padding-left: 0;
-    }
-}
