@@ -131,6 +131,10 @@
     display: none;
   }
 
+//   .nav-links-mobile {
+//     display: none;
+//   }
+
 @media (max-width: 960px) {
 .side-bar {
     width: 100%;
@@ -214,15 +218,17 @@
         transition: all 0.5s ease-out;
         width: 100%;
     }
+
     .home-link,
     .about-link,
     .portfolio-link,
     .skills-link,
     .contact-link {
-        text-align: center;
+         text-align: center;
+        padding: 32px;
         width:  100%;
         font-size: 19px;
-        padding: 32px;
+        align-items: center;
         transition: all 0.5s ease;
     }
 
