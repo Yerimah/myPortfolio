@@ -7,8 +7,8 @@ import Loader from 'react-loaders'
 
 const Home = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate')
-  const nameArray = ['D', 'a', 'n', 'i', 'e', 'l', ' ', 'Y', 'e', 'r', 'i', 'm', 'a', 'h']
-  const jobArray = ['s', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
+  const nameArray = ['D', 'a', 'n', 'i', 'e', 'l', ' ', 'Y', 'e', 'r', 'i', 'm', 'a', 'h', ',', '']
+  const jobArray = ['a', '', 's', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r', '.']
 
   useEffect(() => {
     setTimeout(() => {
@@ -29,12 +29,13 @@ const Home = () => {
               <span className={`${letterClass} _14`}>'m</span> <AnimatedLetters letterClass={letterClass}
             strArray={nameArray}
             idx={15} />
-             <br/>
              <AnimatedLetters letterClass={letterClass}
             strArray={jobArray}
             idx={22} />
             </h1>
-          <h2>Front End developer / UI/UX / Digital media strategist</h2>
+          <p>I create visually appealing and functional user interfaces for websites and applications. 
+            As a strong supporter of clean and responsive design, 
+            I can bring ideas to life with scalable and readable code that adheres to best practices.</p>
           <Actions />
         </div>
         <div className='hero-img'>

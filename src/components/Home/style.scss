@@ -9,7 +9,7 @@
         max-height: 90%;
     }
     h1 {
-        font-size: 53px;
+        font-size: 38px;
         margin: 0;
         font-family: 'coolvertica';
         font-weight: 400;
@@ -36,13 +36,14 @@
         }
     }
 
-    h2 {
+    p {
         color: #8d8d8d;
-        margin-top: 20px;
+        width: 59%;
         padding-bottom: 20px;
         font-weight: 400;
         font-family: 'sans-serif';
-        letter-spacing: 3px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
         animation: fadeIn 1s 1.8s backwards;
     }
  }
@@ -62,4 +63,16 @@
     width: 300px;
     border-radius: 50%;
     
+}
+
+@media (max-width: 530px) {
+    // .home-page {
+    //     h1 {
+    //         font-size: 22px;
+    //     }
+
+    //     p {
+            
+    //     }
+    // }
 }

@@ -105,11 +105,8 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      {/* <Link to="#" className='mobile-link'>
-        <FontAwesomeIcon icon={faBars} color="#ffffff" />
-      </Link> */}
 
-      <button className='mobile-link' 
+      <Link to="#" className='mobile-link' 
         onClick={() => setIsMobile(!isMobile)}
         >
         {isMobile ? (
@@ -117,7 +114,7 @@ const Navbar = () => {
         ) : (
         <FontAwesomeIcon icon={faBars} />
         )}
-        </button>
+        </Link>
     </div>
   )
 }
