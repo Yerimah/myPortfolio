@@ -36,3 +36,21 @@
         color: white;
     }
 }
+
+@media (max-width: 530px) {
+    .portfolio-card {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 20%;
+        gap: 1.5rem;
+    }
+
+    .portfolio-image {
+        width: 200px;
+        padding-left: 60px;
+    }
+    
+    .app-details {
+        padding-left: 43px;
+    }
+}

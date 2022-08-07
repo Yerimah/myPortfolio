@@ -66,13 +66,18 @@
 }
 
 @media (max-width: 530px) {
-    // .home-page {
-    //     h1 {
-    //         font-size: 22px;
-    //     }
+    .home-page {
+        h1 {
+            font-size: 37px;
+        }
 
-    //     p {
-            
-    //     }
-    // }
+        p {
+            width: 127%;
+        }
+    }
+
+    .hero-img {
+        padding-top: 170%;
+        padding-left: 7%;
+    }
 }
