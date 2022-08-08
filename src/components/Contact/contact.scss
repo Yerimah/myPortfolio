@@ -81,6 +81,17 @@
     }
 }
 
+@media (max-width: 960px) {
+    .contact_cont {
+        flex-direction: column;
+        padding-top: 10%;
+    }
+
+    .contact-form {
+        margin-top: 4%;
+    }
+
+}
 
 
 @media (max-width: 530px) {

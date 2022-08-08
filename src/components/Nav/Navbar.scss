@@ -131,10 +131,6 @@
     display: none;
   }
 
-//   .nav-links-mobile {
-//     display: none;
-//   }
-
 @media (max-width: 960px) {
 .side-bar {
     width: 100%;
@@ -170,18 +166,10 @@
     }
 
     ul {
-        position: static;
-        bottom: 20px;
-        width: auto;
-        height: 60px;
-        line-height: 60px;
+        height: 23px;
         display: flex;
         align-items: center;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin-right: 10px;
-        float: right;
+        padding-left: 85%;
 
         li {
             margin-right: 10px;
