@@ -83,16 +83,21 @@
 
 @media (max-width: 530px) {
     .home-page {
+
+        .main {
+            top: 22%;
+        }
+
         h1 {
-            font-size: 37px;
+            font-size: 33px;
         }
 
         p {
-            width: 107%;
+            width: 96%;
         }
     }
 
     .hero-img {
-        padding: 144% 0 10% 3%;
+        padding: 184% 0 10% 3%;
     }
 }
