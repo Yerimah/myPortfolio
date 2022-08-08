@@ -5,7 +5,6 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCss3, faGitAlt, faHtml5, faJsSquare, faNode, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
-// import photo from '../../assets/photo.png'
 
 const About = () => {
   const [ letterClass, setLetterClass ] = useState('text-animate')
@@ -32,12 +31,6 @@ const About = () => {
               opportunity to work with the latest technologies on challenging and innovative projects</p>
             <p>I'm confident and curious with a desire to consistently grow and improve my skills</p>
         </div>
-
-        {/* <div className='about'>
-            <div className='about-image'>
-              <img src={photo} alt='photo' width='100px' height='100px' />
-            </div>
-          </div> */}
 
           <div className='stage-cube-cont'>
             <div className='cubespinner'>

@@ -45,8 +45,9 @@
     input[type='text'],
     input[type='email'] {
         width: 100%;
-        border: 0;
-        background-color: rgb(92, 92, 185);
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
         height: 50px;
         font-size: 16px;
         color: white;
@@ -56,8 +57,9 @@
 
     textarea {
         width: 100%;
-        border: 0;
-        background-color: rgb(92, 92, 185);
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
         height: 50px;
         font-size: 16px;
         color: white;
@@ -81,7 +83,12 @@
 
 @media (max-width: 530px) {
     .contact_cont {
-        position: absolute;
-        top: 22%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 15%;
+    }
+
+    .contact-form {
+        margin-top: 9%;
     }
 }
