@@ -14,6 +14,7 @@ const Skills = () => {
   
   return (
     <>
+    <section id='experience-page'>
     <div className='container skills-page'>
       <div className='text-zone'>
           <h1>
@@ -37,6 +38,43 @@ const Skills = () => {
         with smart people who are driven to impact the world with technology.</p>
      </div>
     </div>
+
+    {/* <div className='container experience'>
+      <div className='front-experience'>
+      <h3>Frontend Development</h3>
+        <article>
+          <h4>HTML/CSS</h4>
+        </article>
+        
+        <article>
+          <h4>JAVASCRIPT</h4>
+        </article>
+        
+        <article>
+          <h4>REACT</h4>
+        </article>
+        
+        <article>
+          <h4>BOOTSTRAP</h4>
+        </article>
+      </div>
+
+      <div className='back-experience'>
+      <h3>Backend Development</h3>
+        <article>
+          <h4>RUBY</h4>
+        </article>
+        
+        <article>
+          <h4>MYSQL</h4>
+        </article>
+        
+        <article>
+          <h4>NODE.JS</h4>
+        </article>
+      </div>
+    </div> */}
+    </section>
     <Loader type="pacman" />
     </>
   )

@@ -110,10 +110,10 @@
   }
 }
 
-@media (max-with: 960px) {
-    // .container {
-    //     padding: 0;
-    // }
+@media (max-width: 960px) {
+    .container {
+        padding-left: 88px;
+    }
 }
 
 

@@ -1,12 +1,17 @@
+#experience {
+    display: flex;
+    flex-direction: row;
+
+}
+
 .skills-page {
     padding-top: 12%;
-    width: 40%;
 }
 
 
 @media (max-width: 530px) {
     .skills-page {
-        width: 100%;
+        width: 86%;
         padding-top: 30%;
     }
     

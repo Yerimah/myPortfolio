@@ -88,6 +88,23 @@
     }
 }
 
+@media (max-width: 960px) {
+    .about-head {
+        top: 20%;
+        width: 90%;
+
+        h1 {
+            font-size: 31px;
+        }
+    }
+
+    .stage-cube-cont {
+        padding-top: 55%;
+        right: 25%;
+        height: 0;
+    }
+}
+
 @media (max-width: 530px) {
     .about-head {
         top: 20%;

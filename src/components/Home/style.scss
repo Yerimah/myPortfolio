@@ -65,6 +65,22 @@
     
 }
 
+@media (max-width: 960px) {
+    .home-page {
+        h1 {
+            font-size: 37px;
+        }
+
+        p {
+            width: 107%;
+        }
+    }
+
+    .hero-img {
+        padding: 52% 0 8% 54%;;
+    }
+}
+
 @media (max-width: 530px) {
     .home-page {
         h1 {
