@@ -12,19 +12,20 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import Logo from '../../assets/resizedLogo.png'
 import './Navbar.scss'
 
 const Navbar = () => {
 
-      const [ isMobile, setIsMobile ] = useState(true)
+      const [ isMobile, setIsMobile ] = useState(false)
 
   return (
     <div className="side-bar">
       <Link className="brand" to="/">
-        Daniel Yerimah
+        <img src={Logo} alt='Daniel Yerimah' />
       </Link>
       <nav className={isMobile ? "nav-links-mobile" : "nav-links"}
-          onClick={() => setIsMobile(false)}
+          onClick={() => setIsMobile(true)}
           >
           <NavLink 
             exact="true" 
