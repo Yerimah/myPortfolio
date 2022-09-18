@@ -24,9 +24,7 @@ const Navbar = () => {
       <Link className="brand" to="/">
         <img src={Logo} alt='Daniel Yerimah' />
       </Link>
-      <nav className={isMobile ? "nav-links-mobile" : "nav-links"}
-          onClick={() => setIsMobile(true)}
-          >
+      <nav className={isMobile ? "nav-links-mobile" : "nav-links"}>
           <NavLink 
             exact="true" 
             activeclassname="active" 
