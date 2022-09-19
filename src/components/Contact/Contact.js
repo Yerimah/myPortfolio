@@ -42,7 +42,8 @@ const Contact = () => {
         </h1>
         <p>
           I am interested in exploring different opportunities and collaborations from remote to freelance.
-          If you have other requests or questions, don't hesitate to contact me through the form
+          If you have other requests or questions, don't hesitate to contact me through the form 
+          OR Call: +234 703 247 3322, +234 704 231 0018
         </p>
         </div>
 
